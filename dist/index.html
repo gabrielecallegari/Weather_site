@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="IT">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WEB APP METEO</title>
+		<link rel="stylesheet" href="./assets/styles/normalize.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/styles/main.min.css">
+		
+    </head>
+    <body>
+		<div class="menu">
+			<div id="myLinks" class="menu__container">
+				<div class="menu__options">
+					<!-- opzioni menu -->
+					<label class="menu__label-menu">OPZIONI E CREDITI</label>
+					<div class="menu__far-mode">
+						<label class="menu__label">Temperatura in <sup> °</sup>F</label>
+						<button class="menu__farbutton" onclick="far()" id="bottoneFar">Off</button>
+						<p class="menu__p">Progetto di Front-end creato da Gabriele Callegari.<br>
+							L'obiettivo era quello di creare una webapp che restituisse il meteo corrente.<br>
+							La temperatura cambia sulla prossima ricerca ma non su quelle già effettuate (non sapevo come farlo).<br>
+							L'Immagine di sfondo è generata casualmente.<br>
+							In base al device cambiano i size della pagina<br>
+							Spero le piaccia :)
+						</p>
+				    </div>
+				</div>
+			  </div>
+			  <a class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+		</div>
+
+		<div class="error-box" id="error-box">
+			<label class="error-box__label">Errore!</label><br><br>
+			<label class="error-box__msg" id="error-box__msg"></label><br><br>
+			<button class="error-box__button" onclick="okFunction()">Ok!</button>
+		</div>
+
+        <div class="app" id="app">
+			<section class="header-section container">
+				<h1 class="header-section__site-title">METEO</h1>
+				<form class="weatherForm" id="weatherForm">
+					<input type="text" name="city" id="city" class="weatherForm__input" placeholder="Scrivi qui il nome della città">
+					<button class="weatherForm__button" type="submit">Ottieni il meteo</button>
+				</form>
+				<span class="msg"></span>
+			</section>
+			<section class="ajax-section container">
+				<ul class="cities list-reset"></ul>
+			</section>
+		</div>
+        <div class="reset">
+			<button class="reset__button" id="reset-button" onclick="functionResetButton()">Svuota lista</button>
+		</div>
+        <script src="./assets/scripts/main.js"></script>
+
+    </body>
+</html>

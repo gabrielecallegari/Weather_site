@@ -1,0 +1,91 @@
+.menu{
+  background-color: $menu ;
+  a{
+    color: $white;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    &.icon{
+      background: $red;
+      display: block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      &:active{
+        background: $dark-red;
+      }
+    }
+  }
+  &__container{
+    height: 100vh;
+    background-color: $sfondo;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  &__options{
+    padding-top: 0px;
+  }
+  
+  &__label-menu{
+    font-size: 44px;
+    font-weight: bold;
+    color:$white;
+    margin-top: 0;
+    color:$red;
+    
+    
+  }
+
+  &__label{
+    font-size: 40px;
+    color:$black;
+  }
+
+  &__p{
+    margin-top: 80px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right:20px;
+  }
+  &__far-mode{
+    margin-top: 60px;
+  }
+
+  &__farbutton{
+      margin-top: 0;
+      border-radius: 20px;
+      font-size: 25px;
+      padding: 10px;
+      padding-right: 15px;
+      padding-bottom: 5px;
+      background-color: $red;
+      color:$white;
+      border: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    &__p{
+      margin-top: 200px;
+    }
+  }
+  
+  @media screen and (min-width: 500px) {
+    @media screen and(min-height: 300px){
+      &__p{
+        margin-top:50px;
+      }
+      &__far-mode{
+        margin-top:20px;
+      }
+    }
+    @media screen and (min-height: 500px){
+      &__p{
+        margin-top:130px;
+      }
+      &__far-mode{
+        margin-top:60px;
+      }
+    }
+  }
+}

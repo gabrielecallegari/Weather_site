@@ -1,0 +1,19 @@
+.reset{
+    display: flex;
+    justify-content: center;
+    &__button{
+        font-size: 22px;
+        position: fixed;
+        bottom:10px;
+        border-radius: 10px;
+        outline: none;
+        background-color: $red;
+        color:$white;
+        border:0;
+        padding:10px;
+        &:active {
+            background-color: $dark-red;
+        }
+    }
+
+}

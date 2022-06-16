@@ -1,0 +1,45 @@
+.error-box{
+    text-align: center;
+    background-color: $bkg-card;
+    border-radius: 15px;
+    padding:0.5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 35vh;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    &__label{
+        color:$red;
+        font-size: 40px;
+    }
+
+    &__msg{
+        font-size: 25px;
+    }
+
+    &__button{
+        color:$white;
+        border:0;
+        border-radius: 20px;
+        font-size: 25px;
+        padding: 5px 60px;
+        background-color: $red;
+        &:active{
+            background-color: green;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 38%;
+        margin-right: 38%;
+    }
+    @media screen and (min-width: 800px) {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    @media screen and (min-width: 500px) {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}

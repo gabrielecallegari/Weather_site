@@ -1,0 +1,298 @@
+/*
+
+    @doc scss https://sass-lang.com/guide
+
+*/
+body {
+  font-size: 20px;
+  background-color: rgba(213, 213, 213, 0.842);
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-repeat: no-repeat;
+}
+
+.header-section {
+  color: #f54829;
+  text-align: center;
+}
+.header-section__site-title {
+  font-size: 44px;
+  margin-top: 0px;
+  background-color: rgba(213, 213, 213, 0.842);
+}
+
+.weatherForm {
+  display: grid;
+  background-color: rgba(213, 213, 213, 0.842);
+  border-radius: 10px;
+  margin: 0 5%;
+}
+.weatherForm ::-webkit-input-placeholder {
+  color: #111111;
+}
+.weatherForm ::-moz-placeholder {
+  color: #111111;
+}
+.weatherForm :-ms-input-placeholder {
+  color: #111111;
+}
+.weatherForm ::-ms-input-placeholder {
+  color: #111111;
+}
+.weatherForm ::placeholder {
+  color: #111111;
+}
+.weatherForm__input {
+  background-color: transparent;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  outline: none;
+  font-size: 20px;
+  border-radius: 15px, 15px, 0, 0;
+  padding: 5px;
+  text-align: center;
+}
+.weatherForm__div {
+  display: inline;
+}
+.weatherForm__location {
+  width: 30px;
+  height: 30px;
+}
+.weatherForm__button {
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 4px;
+  background-color: #f54829;
+}
+.weatherForm__button:active {
+  background-color: #bb0404;
+}
+@media screen and (min-width: 1200px) {
+  .weatherForm {
+    margin-left: 38%;
+    margin-right: 38%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .weatherForm {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .weatherForm {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+.cities {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media screen and (min-width: 1200px) {
+  .cities {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (min-width: 800px) {
+  .cities {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (min-width: 500px) {
+  .cities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.menu {
+  background-color: rgba(213, 213, 213, 0.939);
+}
+.menu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+}
+.menu a.icon {
+  background: #f54829;
+  display: block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.menu a.icon:active {
+  background: #bb0404;
+}
+.menu__container {
+  height: 100vh;
+  background-color: url("https://source.unsplash.com/1600x900/?landscape");
+  display: none;
+  text-align: center;
+  overflow: hidden;
+}
+.menu__options {
+  padding-top: 0px;
+}
+.menu__label-menu {
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+  margin-top: 0;
+  color: #f54829;
+}
+.menu__label {
+  font-size: 40px;
+  color: #111111;
+}
+.menu__p {
+  margin-top: 80px;
+  font-size: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.menu__far-mode {
+  margin-top: 60px;
+}
+.menu__farbutton {
+  margin-top: 0;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 10px;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  background-color: #f54829;
+  color: white;
+  border: 0;
+}
+@media screen and (min-width: 1200px) {
+  .menu__p {
+    margin-top: 200px;
+  }
+}
+@media screen and (min-width: 500px) and (min-height: 300px) {
+  .menu__p {
+    margin-top: 50px;
+  }
+  .menu__far-mode {
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width: 500px) and (min-height: 500px) {
+  .menu__p {
+    margin-top: 130px;
+  }
+  .menu__far-mode {
+    margin-top: 60px;
+  }
+}
+
+.reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.reset__button {
+  font-size: 22px;
+  position: fixed;
+  bottom: 10px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #f54829;
+  color: white;
+  border: 0;
+  padding: 10px;
+}
+.reset__button:active {
+  background-color: #bb0404;
+}
+
+.city {
+  background-color: rgba(255, 255, 255, 0.931);
+  text-align: center;
+  border-radius: 10px;
+  border-left: 0;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+.city__emoji {
+  width: 20px;
+  height: 17px;
+}
+@media screen and (min-width: 500px) {
+  .city {
+    margin-right: 15px;
+  }
+}
+
+.error-box {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.931);
+  border-radius: 15px;
+  padding: 0.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 35vh;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.error-box__label {
+  color: #f54829;
+  font-size: 40px;
+}
+.error-box__msg {
+  font-size: 25px;
+}
+.error-box__button {
+  color: white;
+  border: 0;
+  border-radius: 20px;
+  font-size: 25px;
+  padding: 5px 60px;
+  background-color: #f54829;
+}
+.error-box__button:active {
+  background-color: green;
+}
+@media screen and (min-width: 1200px) {
+  .error-box {
+    margin-left: 38%;
+    margin-right: 38%;
+  }
+}
+@media screen and (min-width: 800px) {
+  .error-box {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+}
+@media screen and (min-width: 500px) {
+  .error-box {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+/**
+    Extend 
+    https://sass-lang.com/guide#topic-7
+*/

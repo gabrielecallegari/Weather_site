@@ -1,0 +1,11 @@
+.header-section{
+    color:$red;
+    text-align: center;
+    
+    &__site-title{
+        font-size:44px ;
+        margin-top: 0px;
+        background-color:$bkg-color;
+        
+    }
+}

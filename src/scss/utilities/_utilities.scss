@@ -1,0 +1,9 @@
+/**
+    Extend 
+    https://sass-lang.com/guide#topic-7
+*/
+%clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
